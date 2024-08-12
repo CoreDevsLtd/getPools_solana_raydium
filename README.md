@@ -20,7 +20,7 @@ Before you begin, ensure that you have [Node.js](https://nodejs.org/) installed 
    git clone https://github.com/CoreDevsLtd/getPools_solana_raydium.git
    cd getPools_solana_raydium
 2. Install the necessary dependencies:
-    ```npm install
+      ```npm install```
 
 ## Configuration
 
@@ -33,8 +33,10 @@ Before running the program, you need to configure the config.js file:
 ## Usage
 
 To run the program and fetch pool keys:
-```npm run dev
+
+       npm run dev
 This will execute the index.js file, fetch the pool keys from Raydium, and display the results in the console.
+
 
 ## Project Structure
 
