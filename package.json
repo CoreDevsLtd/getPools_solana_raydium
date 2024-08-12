@@ -1,0 +1,22 @@
+{
+  "name": "getpools-solana",
+  "version": "1.0.0",
+  "description": "Simple and faster solution to get liquidity pool keys on raydium dex with providing just 2 token mint.",
+  "main": "index.js",
+  "email": "shahria_emon@coredevs.ltd",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "raydium",
+    "solana",
+    "blockchain",
+    "web3"
+  ],
+  "author": "Shahria Emon",
+  "license": "ISC",
+  "dependencies": {
+    "@raydium-io/raydium-sdk": "^1.3.1-beta.50",
+    "@solana/web3.js": "^1.95.2"
+  }
+}
