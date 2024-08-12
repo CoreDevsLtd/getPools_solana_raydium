@@ -1,9 +1,15 @@
-const { Connection } = require('@solana/web3.js');
-const { WSOL } = require('@raydium-io/raydium-sdk');
+// Importing necessary modules from the Solana web3.js and Raydium SDK
+const { Connection } = require('@solana/web3.js');  // Solana connection object for interacting with the network
+const { WSOL } = require('@raydium-io/raydium-sdk');  // Wrapped SOL (WSOL) token object from Raydium SDK
 
-let RPC_URL= "" // Enter Your Node RPC/HTTPS connection url here
-const tokenA = WSOL.mint // Enter tokenA of the pool. || Using Wrapped SOL by default
-const tokenB = "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B" // Enter tokenB of the pool || Using Pepe token as default
-const connection = new Connection(RPC_URL, "confirmed"); // Creating web3 instance
+let RPC_URL = "";  // Placeholder for the RPC/HTTPS connection URL to your Solana node
 
-module.exports = { connection, tokenA, tokenB } // Exporting the configurations 
+// Configuring tokens for the liquidity pool
+const tokenA = WSOL.mint;  // Token A of the pool; using Wrapped SOL (WSOL) as the default
+const tokenB = "B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B";  // Token B of the pool; using Pepe token as the default
+
+// Creating a new connection instance with the provided RPC URL and a commitment level of "confirmed"
+const connection = new Connection(RPC_URL, "confirmed");
+
+// Exporting the connection and token configurations for use in other parts of the application
+module.exports = { connection, tokenA, tokenB };
